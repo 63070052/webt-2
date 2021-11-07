@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://kit.fontawesome.com/2cb51aab6c.js" crossorigin="anonymous"></script>
+ 
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Project-2</title>
+  <link rel="stylesheet" href="css/css.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top"
+    style="background: white; height: 80px;  border-bottom: 6px solid #ffbd31;box-shadow: 0 4px 15px 0px rgba(50,50,50,.15);color: #3c66ac; ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img
+          src="https://media.discordapp.net/attachments/857938597671993345/906776257948184596/Untitled_Artwork.png?width=540&height=472"
+          alt="" width="80" height="74">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" style="color: #3c66ac;" aria-current="page" href="#">CSS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: #3c66ac;" href="#" onclick="about();return false;">ประโยชน์</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: #3c66ac;" aria-current="page" href="work.html">การใช้งาน</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">By Nuttida</a>
+          </li>
+        </ul>
+       
+      </div>
+    </div>
+  </nav>
+  <!-- ----------------------------- -- -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel"
+    style="background-color: rgb(189, 194, 187);">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <center><img class="d-block w-50 " src="https://i.pinimg.com/564x/95/71/e8/9571e8d4996835c9611385f42ed77c37.jpg"
+            alt="First slide"></center>
+      </div>
+      <div class="carousel-item">
+        <center><img class="d-block w-50" src="https://i.pinimg.com/564x/28/22/b9/2822b93221175fb35c13bb7d998d2f34.jpg"
+            alt="Second slide"></center>
+      </div>
+      <div class="carousel-item">
+        <center><img class="d-block w-50" src="https://i.pinimg.com/564x/6f/7e/89/6f7e89315ab4cc832e1a08e7859f1a2f.jpg"
+            alt="Third slide"></center>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+  <!-- -------------------------------------------- -->
+  <div style="background-color: #f5f7f9;">
+    <div class="head1">
+      <h4 class="head2" style="width: 200px;">CSS คืออะไร?</h4>
+    </div>
+
+    <div class="txt">
+      <a>
+        CSS ย่อมาจาก <b>"Cascading Style Sheet"</b>
+        <br>คือภาษาที่ใช้เป็นส่วนของการจัดรูปแบบการแสดงผลเอกสาร HTML
+        <br>โดยที่ CSS ใช้กำหนดรูปแบบของเว็บ ได้แก่ สีของข้อความ สีพื้นหลัง
+        <br>ประเภทตัวอักษร และการจัดวางข้อความ
+        <br>CSS สามารถกำหนดรูปแบบพร้อมกันทีเดียวได้ ทำให้เวลาแก้ไขไม่ต้องคอยแก้ทีละส่วน
+        <a>
+    </div>
+  </div>
+  <div>
+    <div class="head1">
+      <h4 class="head2" style="width: 220px;">การพัฒนา CSS</h4>
+    </div>
+
+    <div class="txt">
+      <a>CSS เริ่มพัฒนาในปี ค.ศ. 1994
+        <br>ถูกกำหนดมาตรฐานโดย W3C การใช้ CSS
+        <br>ในการจัดรูปแบบการแสดงผล จะช่วยลดการใช้ภาษา HTML
+        ในการตกแต่งเอกสารเว็บเพจ
+        <br>ทำให้ซอสโค้ด (Source Code) ภายในเอกสาร HTML เหลือเพียงส่วนเนื้อหา
+        ทำให้เข้าใจง่ายขึ้น</a>
+    </div>
+
+  </div>
+
+  <div class="c1">
+    <div class="crad-1">
+      <img class="c1-1"
+        src="https://media.discordapp.net/attachments/856807440246505483/906275317105184819/0e2fd5335581edfc.PNG?width=472&height=472">
+      <div class="gen">
+        <h3 style="color: #345895;">CSS1</h3>
+        <a>1996 (พ.ศ. 2539)</a>
+      </div>
+    </div>
+
+    <div class="crad-1">
+      <img class="c1-1"
+        src="https://media.discordapp.net/attachments/856807440246505483/906275324713660466/50ef7b60e650aeeb.PNG?width=472&height=472">
+      <div class="gen ">
+        <h3 style="color: #345895;">CSS2</h3>
+        <a>1998 (พ.ศ. 2541)</a>
+      </div>
+    </div>
+
+    <div class="crad-1">
+      <img class="c1-1" 
+        src="https://media.discordapp.net/attachments/856807440246505483/906275317105184819/0e2fd5335581edfc.PNG?width=472&height=472">
+      <div class="gen">
+        <h3 style="color: #345895;">CSS3</h3>
+        <a>2011 (พ.ศ. 2554)</a>
+      </div>
+    </div>
+  </div>
+  <div style="border-bottom: 2px solid #ffbd31; width: 90%;  left: 60px; position: relative; margin-bottom: 30px ;"></div>
+  <!-- ------------------------------------ ---------------------------------- -->
+  <div  style="background-color: #f5f7f9; padding-bottom: 50px;">
+    <div class="head1" >
+      <h3 class="head2" style="width: 350px;">ประโยชน์ของภาษา CSS</h3>
+    </div>
+
+    <div>
+      <br>
+      <div class="txt1">
+        <a>
+          1.&nbsp;&nbsp; ช่วยให้เนื้อหาภายในเอกสาร HTML มีความเข้าใจได้ง่ายขึ้นและในการแก้ไขเอกสารก็สามารถทำได้ง่ายกว่าเดิม
+          <br>&nbsp; &nbsp; &nbsp; เพราะการใช้ CSS จะช่วยลดการใช้ภาษา HTML ลงได้ในระดับหนึ่ง
+          และแยกระหว่างเนื้อหากับรูปแบบในการแสดงผลได้อย่างชัดเจน
+        </a>
+      </div>
+
+      <div class="txt1">
+        <a>
+          <br>2.&nbsp;&nbsp; ทำให้สามารถดาวน์โหลดไฟล์ได้เร็ว เนื่องจาก code ในเอกสาร HTML ลดลง จึงทำให้ไฟล์มีขนาดเล็กลง
+        </a>
+      </div>
+
+      <div class="txt1">
+        <a>
+          <br>3.&nbsp;&nbsp; สามารถกำหนดรูปแบบการแสดผลจากคำสั่ง style sheet ชุดเดียวกัน
+          <br>&nbsp; &nbsp; &nbsp; ให้มีการแสดงผลในเอกสารแบบเดียวทั้งหน้าหรือในทุก ๆ หน้าได้ ช่วยลดเวลาในการปรับปรุง
+          <br>&nbsp; &nbsp; &nbsp; และทำให้การสร้างเอกสารบนเว็บมีความรวดเร็วยิ่งขึ้น นอกจากนี้ยังสามารถควบคุมการแสดงผล
+          <br>&nbsp; &nbsp; &nbsp; ให้คล้ายหรือเหมือนกันได้ในหลาย Web Browser
+        </a>
+      </div>
+
+      <div class="txt1">
+        <a>
+          <br>4.&nbsp;&nbsp; ช่วยในการกำหนดการแสดงผลในรูปแบบที่มีความเหมาะกับสื่อต่างๆ ได้เป็นอย่างดี
+        </a>
+      </div>
+
+      <div class="txt1">
+        <a>
+          <br>5.&nbsp;&nbsp; ทำให้เว็บไซต์มีความเป็นมาตรฐานมากขึ้นและมีความทันสมัย สามารถรองรับการใช้งานในอนาคตได้ดี
+        </a>
+      </div>
+     
+    </div>
+  </div>
+  <!-- ------------------------------------------ -->
+<div>
+<div >
+  <div class="head1">
+    <h4 class="head2" style="width: 220px;">ศึกษาเพิ่มเติม</h4>
+  </div>
+
+  <div style="text-align: center; margin: 40px;">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/HcInSUzhaUc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
+</div>
+<!-- -------------------------------------------- -->
+<footer>
+  <div class="footer1">
+
+    <div class="box1">
+        <div class="box1-1">
+          <h4 style="color: #e7a14f;" >Nutthidapops_</h4>
+        </div>
+
+        <div class="box1-2">
+          <h5>&nbsp; เอกสารอ้างอิง</h5>
+          <div style="display: flex; flex-direction: row;">
+            <div style="width: 30px; margin: 5px; ">
+              <a target="_blank" href="https://beanthemes.com/knowledge/command-css/"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="file-alt" class="svg-inline--fa fa-file-alt fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"></path></svg></a>
+            </div>
+
+            <div style="width: 30px; margin: 5px;">
+              <a target="_blank" href="https://www.hellomyweb.com/course/CSS/how_to_use_css/"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="file-alt" class="svg-inline--fa fa-file-alt fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"></path></svg></a>
+            </div>
+
+            <div style="width: 30px; margin: 5px;">
+              <a target="_blank" href="https://medium.com/@hemhongsa.1994/%E0%B8%AA%E0%B8%A3%E0%B8%B8%E0%B8%9B%E0%B8%9E%E0%B8%B7%E0%B9%89%E0%B8%99%E0%B8%90%E0%B8%B2%E0%B8%99-css-f60ba0c466a9"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="file-alt" class="svg-inline--fa fa-file-alt fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"></path></svg></a>
+            </div>
+
+            <div style="width: 30px; margin: 5px;">
+              <a target="_blank" href="https://blog.sogoodweb.com/Article/Detail/79237/CSS-%E0%B8%84%E0%B8%B7%E0%B8%AD%E0%B8%AD%E0%B8%B0%E0%B9%84%E0%B8%A3-%E0%B8%A1%E0%B8%B5%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%82%E0%B8%A2%E0%B8%8A%E0%B8%99%E0%B9%8C-%E0%B8%AD%E0%B8%A2%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B9%84%E0%B8%A3"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="file-alt" class="svg-inline--fa fa-file-alt fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"></path></svg></a>
+            </div>
+          </div>
+          
+        </div>
+    </div>
+
+    <div>
+      <img src="https://diamondgrains.com/img/footer/line_footer.svg">
+    </div>
+    <div class="box2">
+      <div><img src="https://engineer.kmitl.ac.th/wp-content/uploads/2019/03/logo04-300x270.png" width="150px"></div>
+      <div style="margin-top: 40px;"><a>เว็บไซต์นี้เป็นส่วนหนึ่งของรายวิชา WEB TECHNOLOGY 06016312
+        <br>สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง 
+        <br>คณะเทคโนโลยีสารสนเทศ สาขาเทคโนโลยีสารสนเทศ
+        <br>นางสาวณัฐธิดา เปล่งขำ 
+        <br>รหัสนักศึกษา 63070052
+      </a>
+    </div>
+    </div>
+  </div>
+
+  <div>
+
+  </div>
+</footer>
+
+</body>
+<script>
+  function about() {
+    var about = document.getElementById("payod");
+    about.scrollIntoView();
+}
+</script>
+
+</html>

@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>การใช้งาน</title>
+    <link rel="stylesheet" href="css/work.css" />
+    <link rel="stylesheet" href="css/css.css" />
+    <link rel="stylesheet" href="css/block.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top"
+    style="background: white; height: 80px;  border-bottom: 6px solid #ffbd31;box-shadow: 0 4px 15px 0px rgba(50,50,50,.15);color: #3c66ac; ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img
+          src="https://media.discordapp.net/attachments/857938597671993345/906776257948184596/Untitled_Artwork.png?width=540&height=472"
+          alt="" width="80" height="74">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" style="color: #3c66ac;" aria-current="page" href="index.html">CSS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: #3c66ac;" href="index.html" onclick="about();return false;">ประโยชน์</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: #3c66ac;" aria-current="page" href="work.html">การใช้งาน</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">By Nuttida</a>
+          </li>
+        </ul>
+       
+      </div>
+    </div>
+  </nav>
+  <div style="height: 100px;"></div>
+    <!-- ---------------------------------- -->
+    <div class="row">
+        <div class="col-3">
+            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
+                    aria-controls="v-pills-home" aria-selected="true">CSS ใน HTML</a>
+                <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
+                    aria-controls="v-pills-profile" aria-selected="false">CSS Selector</a>
+                <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
+                    aria-controls="v-pills-messages" aria-selected="false">คำสั่งต่าง ๆ</a>
+                <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab"
+                    aria-controls="v-pills-settings" aria-selected="false">เคลื่อนไหว</a>
+
+            </div>
+        </div>
+        <div class="col-9">
+            <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                    <div>
+                        <div class="head3">
+                            <h3 class="head2">การใช้งาน CSS</h3>
+                            <b><h4>1. การเขียน CSS ในเอกสาร HTML</h4></b>
+                                <a>
+                                การเขียนในเอกสาร HTML จะต้องเขียนใน Tag style 
+                                    <br>การเขียนแบบนี้ไม่เป็นที่นิยมเพราะถ้าเราต้องการแก้ไข ก็ต้องแก้ไขในทุกหน้าซึ่งจะทำให้เสียเวลา 
+                                    <br>ตัวอย่างการเขียน CSS ในเอกสาร HTML
+                                <a>
+                                </div>
+                        <div>
+
+                            <div class="block-code" style="width: 200px; height: 270px;">
+                                <code>
+                                    <div class="lag-css" style="padding-top: 5px;" >
+                                       
+                                        <span class=""><</span>
+                                        <span class="nt">head</span>
+                                        <span class="">></span><br>
+                                        <span class=""><</span>
+                                        <span class="">style</span>
+                                        <span class="">></span><br>
+                                        <span class="nt">*</span>
+                                        <span class="y">{</span><br>
+                                        <span class="na">&nbsp;&nbsp; color</span>
+                                        <span class="w"> :</span>
+                                        <span class="s">pink</span>
+                                        <span class="w"> ;</span><br>
+                                        <span class="y">}</span><br>
+                                        <span class=""><</span>
+                                        <span class="">/style</span>
+                                        <span class="">></span><br>
+                                        <span class=""><</span>
+                                        <span class="nt">/head</span>
+                                        <span class="">></span><br>
+                                    </div>
+                                </code>
+                            </div>
+
+                            <div class="head3">
+                                <br><h6>อีกแบบหนึ่งของการเขียน CSS ในเอกสาร HTML คือการเขียนใน HTML tag เลยดังตัวอย่าง</h6>
+                            </div>
+
+                            <div class="block-code" style="width: 450px; height: 120px;">
+                                <code>
+                                    <div class="lag-css">
+                                   
+                                        <span class=""><</span>
+                                        <span class="nt">p </span>
+                                        <span class="na">style=</span>
+                                        <span class="s">"color: blue ; margin-left: 20px;"</span>
+                                        <span class="">></span><br>
+                                        <span class="">&nbsp;&nbsp; ตัวอักษรนี้สีฟ้า และห่างจากขอบทางขวามือ 20px</span><br>
+                                        <span class=""><</span>
+                                        <span class="">/</span>
+                                        <span class="nt">p </span>
+                                        <span class="">></span><br>
+                                    </div>
+                                </code>
+                            </div>
+
+                            <div class="head3">
+                                <br>
+                                <h4>2. การเขียน CSS แยกเป็นอีก 1 ไฟล์</h4>
+                                <a>
+                                    การเขียนแบบนี้เป็นที่นิยมมากเพราะถ้าเราต้องการแก้หน้าตาเว็บเพจของเราก็แก้ไฟล์ CSS 
+                                    <br>แค่ไฟล์เดียวก็สามารถทำให้หน้าเว็บเพจของเราเปลี่ยนไปได้หมด 
+                                    <br>ซึ่งการใช้งานก็ให้เราเขียน Code ที่หน้า HTML ดังนี้
+                                </a>
+                                <a>ตัวอย่างคำสั่งที่ใช้นำเข้าไฟล์ CSS จากภายนอก</a>
+                            </div>
+
+                            <div class="block-code" style="width: 600px; height: 120px; margin-bottom: 50px;">
+                                <code>
+                                    <div class="lag-css" >
+                                        <span class=""><</span>
+                                        <span class="nt">head</span>
+                                        <span class="">></span><br>
+                                        <span class=""><</span>
+                                        <span class="">link </span>
+                                        <span class="nt">rel=</span>
+                                        <span class="s">"stylesheet" </span>
+                                        <span class="">></span>
+                                        <span class="nt">type=</span>
+                                        <span class="s">"text/css" </span>
+                                        <span class="nt">href=</span>
+                                        <span class="s">"ชื่อไฟล์ CSS ของเรา" </span>
+                                        <span class="">></span><br>
+                                        <span class=""><</span>
+                                        <span class="nt">/head</span>
+                                        <span class="">></span><br>
+                                    </div>
+                                </code>
+                            </div>
+
+                        </div>
+                    </div>  
+                </div>
+
+             
+<!-- Selector ------------------------------------------------------------------------------- -->
+                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                    
+                    <div>
+
+                    <div class="head3" style="text-align: center;">
+                        <h3 class="head2">CSS Selector</h3>
+                        <a>Selector คือ HTML elements หรือ elements ที่ CSS Rule ถูกนำไปใช้ ประกอบด้วยแบบต่างๆ ดังนี้
+                        </a>
+                    </div>
+                        <div>
+                            <h6><b>1. *</b></h6>
+                            <div class="block-code" style="width: 200px;">
+                                <code>
+                                <div class="lag-css code1">
+                                    <span></span>
+                                    <span class="nt">*</span>
+                                    <span class="y">{</span><br>
+                                    <span class="na">&nbsp;&nbsp; color</span>
+                                    <span class="w"> :</span>
+                                    <span class="s">pink</span>
+                                    <span class="w"> ;</span><br>
+                                    <span class="y">}</span>
+                                </div>
+                            </code>
+                            </div>
+                            <br>
+                            <div class="head3">
+                                <a>การใช้ * หมายถึง element ทุก element ของหน้าเว็บ
+                                    <br>และข้างใน { } ใส่คำสั่งว่า color : red; หมายถึงตัวอักษรในทุก element
+                                    จะเป็นสีชมพูทั้งหมด
+                                </a>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h6><b>2. .nameclass</b></h6>
+                            <div class="block-code" style="width: 200px;">
+                                <code>
+                                <div class="lag-css">
+                                    <span></span>
+                                    <span class="y">.pink</span>
+                                    <span class="y">{</span><br>
+                                    <span class="na">&nbsp;&nbsp; color</span>
+                                    <span class="w"> :</span>
+                                    <span class="s">pink</span>
+                                    <span class="w"> ;</span><br>
+                                    <span class="y">}</span>
+                                </div>
+                            </code>
+                            </div>
+                            <br>
+                            <div class="head3"><a>การใช้ .(ชื่อ class) คือ element ที่มี class=”ชื่อ class” ของหน้าเว็บ
+                                    ให้แสดงลักษณะรูปแบบตามที่กำหนดใน css
+                                    <br>จากตัวอย่างนี้ class="pink" จึงใช้ .pink แสดงว่า element ที่มี class=”pink”
+                                    ของหน้าเว็บ ให้แสดงตัวอักษรสีชมพู
+                                </a></div>
+                        </div>
+
+                        <div>
+                            <h6><b>3. #nameid</b></h6>
+                            <div class="block-code" style="width: 200px;">
+                                <code>
+                                <div class="lag-css">
+                                    <span></span>
+                                    <span class="y">#pink</span>
+                                    <span class="y">{</span><br>
+                                    <span class="na">&nbsp;&nbsp; color</span>
+                                    <span class="w"> :</span>
+                                    <span class="s">pink</span>
+                                    <span class="w"> ;</span><br>
+                                    <span class="y">}</span>
+                                </div>
+                            </code>
+                            </div>
+                            <br>
+                            <div class="head3"><a>การใช้ #(ชื่อ id) คือ element ที่มี id=”ชื่อ id" ของหน้าเว็บ
+                                    ให้แสดงลักษณะรูปแบบตามที่กำหนดใน css
+                                    <br>จากตัวอย่างนี้ id="pink" จึงใช้ #pink แสดงว่า element ที่มี id=”pink”
+                                    ของหน้าเว็บ ให้แสดงตัวอักษรสีชมพู
+                                </a></div>
+                        </div>
+
+                        <div>
+                            <h6><b>4. element</b></h6>
+                            <div class="block-code" style="width: 200px;">
+                                <code>
+                                <div class="lag-css">
+                                    <span></span>
+                                    <span class="y">h2</span>
+                                    <span class="y">{</span><br>
+                                    <span class="na">&nbsp;&nbsp; color</span>
+                                    <span class="w"> :</span>
+                                    <span class="s">pink</span>
+                                    <span class="w"> ;</span><br>
+                                    <span class="y">}</span>
+                                </div>
+                            </code>
+                            </div>
+                            <br>
+                            <div class="head3">
+                                <a>element ต่าง ๆ ใน HTML สามารถนำชื่อ element นั้น ๆ มาเขียนใน css ได้เลย
+                                    <br>จากตัวอย่างนี้ element h2 ให้แสดงตัวอักษรสีชมพู
+                                </a>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h6><b>5. and หรือ ,</b></h6>
+                            <div class="block-code" style="width: 200px;">
+                                <code>
+                                <div class="lag-css">
+                                    <span></span>
+                                    <span class="y">h2, p</span>
+                                    <span class="y">{</span><br>
+                                    <span class="na">&nbsp;&nbsp; color</span>
+                                    <span class="w"> :</span>
+                                    <span class="s">pink</span>
+                                    <span class="w"> ;</span><br>
+                                    <span class="y">}</span>
+                                </div>
+                            </code>
+                            </div>
+                            <div class="head3">
+                                <a><br>จากตัวอย่างนี้ element h2 และ p ของหน้าเว็บให้แสดงตัวอักษรสีชมพู
+                                </a>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h6><b>6. element ใน element</b></h6>
+                            <div class="block-code" style="width: 200px;">
+                                <code>
+                                <div class="lag-css">
+                                    <span></span>
+                                    <span class="y">div p</span>
+                                    <span class="y">{</span><br>
+                                    <span class="na">&nbsp;&nbsp; color</span>
+                                    <span class="w"> :</span>
+                                    <span class="s">pink</span>
+                                    <span class="w"> ;</span><br>
+                                    <span class="y">}</span>
+                                </div>
+                            </code>
+                            </div>
+                            <div class="head3">
+                                <a>
+                                    <br>จากตัวอย่างนี้ element p ที่อยู่ใน div ของหน้าเว็บให้แสดงตัวอักษรสีชมพู
+                                </a>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                
+                </div>
+<!-- --------------------------------------------------------------------------------------- -->
+                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                   
+                    <div class="head3">
+                        <h3 class="head2">คำสั่งต่าง ๆ </h3>
+                    </div>
+                    <div>
+                        <h5>กำหนดความกว้าง</h5>
+                        <div class="block-code" style="width: 180px ; height: 50px;padding-top:5px ; ">
+                            <code>
+                                <div class="lag-css">
+                                    <span class="na">&nbsp;&nbsp;width</span>
+                                    <span class="w"> :</span>
+                                    <span class="s">100px</span>
+                                    <span class="w"> ;</span>
+                                </div>
+                            </code>
+                        </div>
+
+                        <h5>กำหนดความสูง</h5>
+                        <div class="block-code" style="width: 180px ; height: 50px;">
+                            <code>
+                                <div class="lag-css" style="padding-top: 5px;">
+                                    
+                                    <span class="na">&nbsp;&nbsp;height</span>
+                                    <span class="w"> :</span>
+                                    <span class="s">100px</span>
+                                    <span class="w"> ;</span>
+                                </div>
+                            </code>
+                        </div>
+
+                        <h5>กำหนดขนาดตัวอักษร</h5>
+                        <div class="block-code" style="width: 180px ; height: 50px;">
+                            <code>
+                                <div class="lag-css" style="padding-top: 5px;">
+                                   
+                                    <span class="na">&nbsp;&nbsp;font-size</span>
+                                    <span class="w"> :</span>
+                                    <span class="s">22px</span>
+                                    <span class="w"> ;</span>
+                                </div>
+                            </code>
+                        </div>
+
+                        <h5>กำหนดความหนาตัวอักษร</h5>
+                        <div class="block-code" style="width: 220px ; height: 50px;">
+                            <code>
+                                <div class="lag-css" style="padding-top: 5px;">
+                                  
+                                    <span class="na">&nbsp;&nbsp;font-weight</span>
+                                    <span class="w"> :</span>
+                                    <span class="s">normal</span>
+                                    <span class="w"> ;</span>
+                                </div>
+                            </code>
+                        </div>
+
+                        <h5>กำหนดรูปแบบตัวอักษร</h5>
+                        <div class="block-code" style="width: 240px ; height: 50px;">
+                            <code>
+                                <div class="lag-css" style="padding-top: 5px;">
+                              
+                                    <span class="na">&nbsp;&nbsp;font-family</span>
+                                    <span class="w"> :</span>
+                                    <span class="s"> ‘sans-serif’</span>
+                                    <span class="w"> ;</span>
+                                </div>
+                            </code>
+                        </div>
+
+                        <h5>จัดตำแหน่งตัวอักษร</h5>
+                        <div class="block-code" style="width: 220px ; height: 50px;">
+                            <code>
+                                <div class="lag-css" style="padding-top: 5px;">
+                             
+                                    <span class="na">&nbsp;&nbsp;text-align </span>
+                                    <span class="w"> :</span>
+                                    <span class="s">center</span>
+                                    <span class="w"> ;</span>
+                                </div>
+                            </code>
+                        </div>
+
+                        <h5>กำหนดส่วนสูงของบรรทัด</h5>
+                        <div class="block-code" style="width: 220px ; height: 50px;">
+                            <code>
+                                <div class="lag-css" style="padding-top: 5px;">
+                               
+                                    <span class="na">&nbsp;&nbsp;line-height</span>
+                                    <span class="w"> :</span>
+                                    <span class="s"> 1.5</span>
+                                    <span class="w"> ;</span>
+                                </div>
+                            </code>
+                        </div>
+
+                        <h5>กำหนดสีตัวอักษร</h5>
+                        <div class="block-code" style="width: 220px ; height: 50px;">
+                            <code>
+                                <div class="lag-css" style="padding-top: 5px;">
+                              
+                                    <span class="na">&nbsp;&nbsp;color  </span>
+                                    <span class="w"> :</span>
+                                    <span class="s">#286F65</span>
+                                    <span class="w"> ;</span>
+                                </div>
+                            </code>
+                        </div>
+
+                        <h5>กำหนดให้ตัวอักษรไม่ให้ขึ้นบรรทัดใหม่</h5>
+                        <div class="block-code" style="width: 220px ; height: 50px;">
+                            <code>
+                                <div class="lag-css" style="padding-top: 5px;">
+                                   
+                                    <span class="na">&nbsp;&nbsp;white-space</span>
+                                    <span class="w"> :</span>
+                                    <span class="s"> nowrap</span>
+                                    <span class="w"> ;</span>
+                                </div>
+                            </code>
+                        </div>
+
+                        <h5>ใส่ช่องว่างภายใน</h5>
+                        <a> กำหนดพื้นที่ตัวเองจากขอบ จะมีพื้นที่ว่างจากขอบมาถึงตัวเอง เมื่อกำหนดค่าให้ </a>
+                        <div class="block-code" style="width: 300px;height: auto;">
+                            <code>
+                                <div class="lag-css" style="padding-top: 5px;">
+                                    <span class="w">padding-top : กำหนดด้านบน</span><br>
+                                    <span class="w">padding-right : กำหนดด้านขวา</span><br>
+                                    <span class="w">padding-bottom : กำหนดด้านล่าง</span><br>
+                                    <span class="w">padding-left : กำหนดด้านซ้าย</span><br>
+                                    <span class="w">padding:บน ขวา ล่าง ซ้าย;</span>
+                                    <br> <br>
+                                    <span class="na">&nbsp;padding</span>
+                                    <span class="w"> :</span>
+                                    <span class="s">10px 15px 10px 20px</span>
+                                    <span class="w"> ;</span>
+                                </div>
+                            </code>
+                        </div>
+
+                        <h5>ใส่ช่องว่างภายนอก</h5>
+                        <a> การผลักตัวเองออกจากขอบ ระยะห่างระหว่างขอบ</a>
+                        <div class="block-code" style="width: 300px;height: auto;">
+                            <code>
+                                <div class="lag-css" style="padding-top: 5px;">
+                                    <span class="w">margin-top : ขอบบน</span><br>
+                                    <span class="w">margin-right : ขอบขวา</span><br>
+                                    <span class="w">margin-bottom : ขอบล่าง</span><br>
+                                    <span class="w">margin-left : ขอบซ้าย</span><br>
+                                    <span class="w">margin:บน ขวา ล่าง ซ้าย;</span>
+                                    <br> <br>
+                                    <span class="na">&nbsp;&nbsp;margin</span>
+                                    <span class="w"> :</span>
+                                    <span class="s">10px 15px 10px 20px</span>
+                                    <span class="w"> ;</span>
+                                </div>
+                            </code>
+                        </div>
+
+
+                        <h5>ใส่เส้นขอบ</h5>
+                        <div class="block-code" style="height: auto; width: 300px;">
+                            <code>
+                                <div class="lag-css" style="padding-top: 5px;">
+                           
+                                    <span class="w">border-width: ความหนาของเส้นขอบ</span><br>
+                                    <span class="w">border-style: กำหนดรูปแบบของเส้นขอบ (required)</span><br>
+                                    <span class="w">border-color: กำหนดสีของเส้นขอบ</span><br>
+                                    <span class="w">border: width  style color;</span><br>
+                                    <br>
+                                    <span class="na">&nbsp;&nbsp;border</span>
+                                    <span class="w"> :</span>
+                                    <span class="s">5px solid #000</span>
+                                    <span class="w"> ;</span>
+                                </div>
+                            </code>
+                        </div>
+
+                        <h5>ใส่เงา</h5>
+                        <div class="block-code" style="height: auto; width: 400px;">
+                            <code>
+                                <div class="lag-css" style="padding-top: 5px;">
+                                    <span class="w">1. เงา แนวนอน เลขบวกด้านขวา เลขลบด้านซ้าย</span><br>
+                                    <span class="w">2. เงา แนวตั้ง เลขบวกด้านล่าง เลขลบด้านบน</span><br>
+                                    <span class="w">3. ค่าการเบลอ เริ่มจาก 0 </span><br>
+                                    <span class="w">4. ขอบเขตการขยายวของการเบลอ (a spread distance)</span><br>
+                                    <span class="w">5. สีของเงา</span><br>
+                                    <br>
+                                    <span class="na">&nbsp;&nbsp;box-shadow</span>
+                                    <span class="w"> :</span>
+                                    <span class="s"> 0 0 8px rgba(0, 0, 0, 0.15);</span>
+                                    <span class="w"> ;</span>
+                                </div>
+                            </code>
+                        </div>
+
+                        
+                        <h5>จัดชิดซ้าย</h5>
+                        <!-- <h5>float</h5>
+                        <a>ใช้การวางตำแหน่ง (Positioning) และ การจัดรูปแบบ (Formatting) เนื้อหา</a><br> -->
+
+                        <div class="block-code" style="width: 220px ; height: 50px;">
+                            <code>
+                                <div class="lag-css" style="padding-top: 5px;">
+                                  
+                                    <span class="na">&nbsp;&nbsp;float</span>
+                                    <span class="w"> :</span>
+                                    <span class="s"> left</span>
+                                    <span class="w"> ;</span>
+                                </div>
+                            </code>
+                        </div>
+
+                        <h5>จัดชิดขวา</h5>
+                        <div class="block-code" style="width: 220px ; height: 50px;">
+                            <code>
+                                <div class="lag-css" style="padding-top: 5px;">
+                                  
+                                    <span class="na">&nbsp;&nbsp;float</span>
+                                    <span class="w"> :</span>
+                                    <span class="s"> right</span>
+                                    <span class="w"> ;</span>
+                                </div>
+                            </code>
+                        </div>
+
+                        <h5>เคลียร์ float</h5>
+                        <div class="block-code" style="width: 220px ; height: 50px;">
+                            <code>
+                                <div class="lag-css" style="padding-top: 5px;">
+                           
+                                    <span class="na">&nbsp;&nbsp;clear</span>
+                                    <span class="w"> :</span>
+                                    <span class="s"> both</span>
+                                    <span class="w"> ;</span>
+                                </div>
+                            </code>
+                        </div>
+
+                        <h5>การสร้างขอบเขต ถ้าอยู่นอกขอบเขตจะไม่แสดงผล</h5>
+                        <div class="block-code" style="width: 220px ; height: 50px;">
+                            <code>
+                                <div class="lag-css" style="padding-top: 5px;">
+                          
+                                    <span class="na">&nbsp;&nbsp;overflow</span>
+                                    <span class="w"> :</span>
+                                    <span class="s"> hidden</span>
+                                    <span class="w"> ;</span>
+                                </div>
+                            </code>
+                        </div>
+
+                        <h5>ใส่ค่าความโปร่งทึบ</h5>
+                        <div class="block-code" style="width: 220px ; height: 50px;">
+                            <code>
+                                <div class="lag-css" style="padding-top: 5px;">
+                        
+                                    <span class="na">&nbsp;&nbsp;opacity </span>
+                                    <span class="w"> :</span>
+                                    <span class="s"> 0.5</span>
+                                    <span class="w"> ;</span>
+                                </div>
+                            </code>
+                        </div>
+
+                        <h5>แสดงผลแบบเต็มช่อง</h5>
+                        <div class="block-code" style="width: 220px ; height: 50px;">
+                            <code>
+                                <div class="lag-css" style="padding-top: 5px;">
+                        
+                                    <span class="na">&nbsp;&nbsp;display </span>
+                                    <span class="w"> :</span>
+                                    <span class="s"> block</span>
+                                    <span class="w"> ;</span>
+                                </div>
+                            </code>
+                        </div>
+
+                        <h5>แสดงผลต่อกันในบรรทัด</h5>
+                        <div class="block-code" style="width: 220px ; height: 50px;">
+                            <code>
+                                <div class="lag-css" style="padding-top: 5px;">
+              
+                                    <span class="na">&nbsp;&nbsp;display  </span>
+                                    <span class="w"> :</span>
+                                    <span class="s"> inline</span>
+                                    <span class="w"> ;</span>
+                                </div>
+                            </code>
+                        </div>
+
+                        <h5>ปิดการแสดงผล</h5>
+                        <div class="block-code" style="width: 220px ; height: 50px;">
+                            <code>
+                                <div class="lag-css" style="padding-top: 5px;">
+           
+                                    <span class="na">&nbsp;&nbsp;display </span>
+                                    <span class="w"> :</span>
+                                    <span class="s"> none</span>
+                                    <span class="w"> ;</span>
+                                </div>
+                            </code>
+                        </div>
+
+                        <h5>ใส่สีพื้นหลัง</h5>
+                        <div class="block-code" style="width: 300px ; height: 50px;">
+                            <code>
+                                <div class="lag-css" style="padding-top: 5px;">
+                 
+                                    <span class="na">&nbsp;&nbsp;background-color</span>
+                                    <span class="w"> :</span>
+                                    <span class="s"> #00ff00</span>
+                                    <span class="w"> ;</span>
+                                </div>
+                            </code>
+                        </div>
+
+                        <h5>ใส่รูปพื้นหลัง</h5>
+                        <div class="block-code" style="width: 300px ; height: 50px;">
+                            <code>
+                                <div class="lag-css" style="padding-top: 5px;">
+                                
+                                    <span class="na">&nbsp;&nbsp;background-image </span>
+                                    <span class="w"> :</span>
+                                    <span class="s"> url(“paper.gif”)</span>
+                                    <span class="w"> ;</span>
+                                </div>
+                            </code>
+                        </div>
+
+                        <h5>การจัดการเรื่องตำแหน่งแสดงผล</h5>
+                        <div class="block-code" style="width: 220px ; height: 50px;">
+                            <code>
+                                <div class="lag-css" style="padding-top: 5px;">
+                               
+                                    <span class="na">&nbsp;&nbsp;position</span>
+                                    <span class="w"> :</span>
+                                    <span class="s"> relative</span>
+                                    <span class="w"> ;</span>
+                                </div>
+                            </code>
+                        </div>
+
+                        <h5>กำหนดรูปแบบเคอร์เซอร์</h5>
+                        <div class="block-code" style="width: 220px ; height: 50px;">
+                            <code>
+                                <div class="lag-css" style="padding-top: 5px;">
+                            
+                                    <span class="na">&nbsp;&nbsp;cursor</span>
+                                    <span class="w"> :</span>
+                                    <span class="s"> pointer</span>
+                                    <span class="w"> ;</span>
+                                </div>
+                            </code>
+                        </div>
+
+                    </div>
+                </div>
+<!-- --------------------------------------------------------------------------------------- -->
+                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                   <div>
+                       <div class="head3">
+                           <h3 class="head2">การทำภาพเคลื่อนไหวด้วย CSS</h3>
+                       </div>
+
+                       <h6><b>@keyframes</b></h6>
+                       <a>@keyframes นั้นมีกฎที่ว่า style ของ element ในปัจจุบันจะเปลี่ยนไปตามที่เขียนไว้ใน @keyframes</a>
+                       <div class="block-code" style="width: 300px; padding-top: 20px;">
+                           <code>
+                                <div class="lag-css code1">
+                                    <span></span>
+                                    <span class="m">@keyframes </span>
+                                    <span class="na">move </span>
+                                    <span class="y">{</span><br>
+                                    <span class="y" style="padding-left: 20px;">&nbsp;&nbsp; 0% </span>
+                                    <span class="m">{</span><br>
+                                    <span class="na" style="padding-left: 60px;">left </span>
+                                    <span class="w"> :</span>
+                                    <span class="s">0px</span>
+                                    <span class="w"> ;</span><br>
+                                    <span class="m" style="padding-left: 60px;">}</span><br>
+                                    <span class="y" style="padding-left: 20px;">&nbsp;&nbsp;100% </span>
+                                    <span class="m">{</span><br>
+                                    <span class="na" style="padding-left: 60px;">left </span>
+                                    <span class="w"> :</span>
+                                    <span class="s">120px</span>
+                                    <span class="w"> ;</span><br>
+                                    <span class="m" style="padding-left: 60px;">}</span><br>
+                                    <span class="y">}</span>
+                                </div>
+                            </code>
+                        </div> 
+                        <a>และใน css property ของ class ที่ต้องการจะทำ animation จะต้องระบุชื่อของ animation และใส่ระยะเวลาของ animation ด้วย</a><br>
+                        <div class="block-code" style="width: 300px; ">
+                            <code>
+                                 <div class="lag-css code1">
+                                     <span></span>
+                                     <span class="na">animation-name </span>
+                                     <span class="w"> :</span>
+                                     <span class="na">move </span>
+                                     <span class="w"> ;</span><br>
+                                     <span class="na">animation-duration </span>
+                                     <span class="w"> :</span>
+                                     <span class="na">3 </span>
+                                     <span class="w"> ;</span><br>
+                                 </div>
+                             </code>
+                         </div>
+
+                         <div class="head3">
+                            <h3 class="head2">ตัวอย่างภาพเคลื่อนไหว</h3>
+                        </div>
+                        <div style="height: 300px;"></div>
+                            <div class="load">
+                                <hr/><hr/><hr/><hr/>
+                            </div>
+                       
+                   </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------------------------------------- -->
+    <footer>
+        <div class="footer1">
+      
+          <div class="box1">
+              <div class="box1-1">
+                <h4 style="color: #e7a14f;" >Nutthidapops_</h4>
+              </div>
+      
+              <div class="box1-2">
+                <h5>&nbsp; เอกสารอ้างอิง</h5>
+                <div style="display: flex; flex-direction: row;">
+                  <div style="width: 30px; margin: 5px; ">
+                    <a target="_blank" href="https://beanthemes.com/knowledge/command-css/"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="file-alt" class="svg-inline--fa fa-file-alt fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"></path></svg></a>
+                  </div>
+      
+                  <div style="width: 30px; margin: 5px;">
+                    <a target="_blank" href="https://www.hellomyweb.com/course/CSS/how_to_use_css/"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="file-alt" class="svg-inline--fa fa-file-alt fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"></path></svg></a>
+                  </div>
+      
+                  <div style="width: 30px; margin: 5px;">
+                    <a target="_blank" href="https://medium.com/@hemhongsa.1994/%E0%B8%AA%E0%B8%A3%E0%B8%B8%E0%B8%9B%E0%B8%9E%E0%B8%B7%E0%B9%89%E0%B8%99%E0%B8%90%E0%B8%B2%E0%B8%99-css-f60ba0c466a9"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="file-alt" class="svg-inline--fa fa-file-alt fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"></path></svg></a>
+                  </div>
+      
+                  <div style="width: 30px; margin: 5px;">
+                    <a target="_blank" href="https://blog.sogoodweb.com/Article/Detail/79237/CSS-%E0%B8%84%E0%B8%B7%E0%B8%AD%E0%B8%AD%E0%B8%B0%E0%B9%84%E0%B8%A3-%E0%B8%A1%E0%B8%B5%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%82%E0%B8%A2%E0%B8%8A%E0%B8%99%E0%B9%8C-%E0%B8%AD%E0%B8%A2%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B9%84%E0%B8%A3"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="file-alt" class="svg-inline--fa fa-file-alt fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"></path></svg></a>
+                  </div>
+                </div>
+                
+              </div>
+          </div>
+      
+          <div>
+            <img src="https://diamondgrains.com/img/footer/line_footer.svg">
+          </div>
+          <div class="box2">
+            <div><img src="https://engineer.kmitl.ac.th/wp-content/uploads/2019/03/logo04-300x270.png" width="150px"></div>
+            <div style="margin-top: 40px;"><a>เว็บไซต์นี้เป็นส่วนหนึ่งของรายวิชา WEB TECHNOLOGY 06016312
+              <br>สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง 
+              <br>คณะเทคโนโลยีสารสนเทศ สาขาเทคโนโลยีสารสนเทศ
+              <br>นางสาวณัฐธิดา เปล่งขำ 
+              <br>รหัสนักศึกษา 63070052
+            </a>
+          </div>
+          </div>
+        </div>
+      
+        <div>
+      
+        </div>
+      </footer>
+</body>
+<script>
+    function about() {
+      var about = document.getElementById("payod");
+      about.scrollIntoView();
+  }
+  </script>
+</html>
